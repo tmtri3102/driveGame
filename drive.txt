@@ -1,0 +1,21 @@
+CarGame
+========================
+- carPosition: {x: number, y: number} // Vị trí của xe trên bản đồ
+- carSpeed: number                    // Tốc độ của xe
+- carDirection: string                // Hướng đi của xe (lên, xuống, trái, phải)
+- obstacles: array                    // Mảng chứa vị trí của các chướng ngại vật
+- rewards: array                      // Mảng chứa vị trí của các phần thưởng
+- score: number                       // Điểm số của người chơi
+- isGameOver: boolean                 // Trạng thái kết thúc game
+========================
++ startGame(): void                   // Bắt đầu game
++ moveCar(): void                     // Di chuyển xe theo hướng và tốc độ
++ increaseSpeed(): void               // Tăng tốc độ xe
++ changeDirection(newDirection: string): void // Thay đổi hướng đi của xe
++ checkCollision(): void              // Kiểm tra va chạm với chướng ngại vật
++ checkReward(): void                 // Kiểm tra xe đi qua phần thưởng
++ endGame(): void                     // Kết thúc game
++ drawGame(): void                    // Vẽ xe, chướng ngại vật và phần thưởng trên canvas
+
+
+https://chatgpt.com/share/66f44118-dd38-800b-8142-a322822be796
